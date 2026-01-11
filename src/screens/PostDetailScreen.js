@@ -30,7 +30,7 @@ const PostDetailScreen = ({ route }) => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>{post.title}</Text>
-      <Text style={styles.author}>Autor: {post.author?.name}</Text>
+      <Text style={styles.author}>Autor: {post.author?.name || post.author}</Text>
       <Text style={styles.content}>{post.content}</Text>
     </ScrollView>
   );

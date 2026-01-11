@@ -1,8 +1,9 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import axiosConfig from '../config/axiosConfig';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3030', 
+  baseURL: axiosConfig.baseURL,
 });
 
 api.interceptors.request.use(
